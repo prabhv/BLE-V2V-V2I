@@ -20,15 +20,6 @@ from bluepy.btle import Service
 
 mainloop = None
 
-GATT_CHRC_IFACE =    'org.bluez.GattCharacteristic1'
-
-def generic_error_cb(error):
-    print('D-Bus call failed: ' + str(error))
-    mainloop.quit()
-    
-def hr_msrmt_start_notify_cb():
-    print('HR Measurement notifications enabled')
-
 class MyDelegate(DefaultDelegate):
     def __init__(self):
         DefaultDelegate.__init__(self)
