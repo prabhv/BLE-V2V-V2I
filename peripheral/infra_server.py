@@ -89,7 +89,7 @@ class ElevatorCurrentPos(Characteristic):
         Characteristic.__init__(
             self, bus, index,
             self.ELEVATOR_CURRENT_UUID,  
-            ['read', 'write'],
+            ['read'],
             service)
         self.value = bytes('00', 'utf-8')
 
@@ -105,7 +105,7 @@ class ElevatorDoor(Characteristic):
         Characteristic.__init__(
             self, bus, index,
             self.ELEVATOR_DOOR_UUID,  
-            ['read', 'write'],
+            ['read'],
             service)
         self.value = bytes('open', 'utf-8')
 
@@ -197,7 +197,7 @@ class PlatformStatus(Characteristic):
         Characteristic.__init__(
             self, bus, index,
             self.PLATFORM_STATUS_UUID,  
-            ['read', 'write'],
+            ['read'],
             service)
         self.value = bytes('00', 'utf-8')
 
@@ -217,7 +217,7 @@ class PlatformInfo(Characteristic):
         Characteristic.__init__(
             self, bus, index,
             self.PLATFORM_INFO_UUID,  
-            ['read', 'write'],
+            ['read'],
             service)
         self.value = bytes('TRAIN-DETAILS', 'utf-8')
 
