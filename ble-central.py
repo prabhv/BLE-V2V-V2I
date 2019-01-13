@@ -33,6 +33,7 @@ scanner = Scanner()
 devices = scanner.scan(5.0)
 
 
+##########List of UUID's###########################################
 door_service = '12345678-1234-5678-1234-56789abc1000'
 door_request_chrc = '12345678-1234-5678-1234-56789abc1002'
 door_status_chrc = '12345678-1234-5678-1234-56789abc1001'
@@ -44,10 +45,18 @@ elevator_priority_chrc = '12345678-1234-5678-1234-56789abc2004'
 elevator_pos_chrc = '12345678-1234-5678-1234-56789abc2003'
 elevator_door_chrc = '12345678-1234-5678-1234-56789abc2005'
 
+#####UUID for platform services
 platform_service = '12345678-1234-5678-1234-56789abc3000'
 platform_num_chrc = '12345678-1234-5678-1234-56789abc3001'
 platform_status_chrc = '12345678-1234-5678-1234-56789abc3002'
 platform_info_chrc = '12345678-1234-5678-1234-56789abc3003'
+
+#####UUID for vehicles services
+vehicle_service = '12345678-1234-5678-1234-56789abd0000'
+vehicle_chrc = '12345678-1234-5678-1234-56789abd0001'
+vehicle_status_chrc = '12345678-1234-5678-1234-56789abd0002'
+
+###################################################################
 
 value = "open"
 
